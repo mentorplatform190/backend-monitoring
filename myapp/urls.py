@@ -1,7 +1,7 @@
 from django.urls import path, include
 from rest_framework import routers, serializers, viewsets
 
-from .views import InventoreyView, HandledErrorView, UnHandledErrorView, CaptureMessageView
+from .views import InventoreyView, HandledErrorView, UnHandledErrorView, CaptureMessageView, index
 
 
 urlpatterns = [
@@ -9,4 +9,5 @@ urlpatterns = [
     path('handled', HandledErrorView.as_view()),
     path('unhandled', UnHandledErrorView.as_view()),
     path('message', CaptureMessageView.as_view()),
+    path('polls/', index)
 ]

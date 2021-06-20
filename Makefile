@@ -1,6 +1,6 @@
-SENTRY_AUTH_TOKEN=<your_auth_token>
-SENTRY_ORG=<YOUR ORG NAME>
-SENTRY_PROJECT=<YOUR PROJECT NAME>
+SENTRY_AUTH_TOKEN=7e3692ff52cc4195a1cb8e0ecfcee6cd788692be59344843958fa74b1fe67615
+SENTRY_ORG=hme-ms
+SENTRY_PROJECT=hme-ms
 VERSION=`sentry-cli releases propose-version`
 
 deploy: install create_release associate_commits run_django

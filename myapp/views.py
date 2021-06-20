@@ -4,6 +4,7 @@ import sentry_sdk
 import json
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from django.http import HttpResponse
 
 from .serializers import InventorySerializer
 from .models import Inventory
@@ -111,6 +112,10 @@ class CaptureMessageView(APIView):
 
         return Response()
 
+
+def index(request):
+    x = 1/0
+    return HttpResponse("Hello, world. You're at the polls index.")
 
         
 
