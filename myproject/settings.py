@@ -25,7 +25,7 @@ SECRET_KEY = 'h0z^7km9#o2w@eig&z9f-bso6tks@$q*ho#39o&l0z)aux_2t^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dev.getsentry.net', 'localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition

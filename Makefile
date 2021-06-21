@@ -3,10 +3,7 @@ SENTRY_ORG=hme-ms
 SENTRY_PROJECT=hme-ms
 VERSION=`sentry-cli releases propose-version`
 
-deploy: install create_release associate_commits run_django
-
-install:
-	pip install -r ./requirements.txt
+deploy: create_release associate_commits run_django
 
 create_release:
 	sentry-cli releases -o $(SENTRY_ORG) new -p $(SENTRY_PROJECT) $(VERSION)
