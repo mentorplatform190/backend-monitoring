@@ -114,7 +114,7 @@ class CaptureMessageView(APIView):
 
 
 def index(request):
-    x = 1/0
+    x = 2/0
     return HttpResponse("Hello, world. You're at the polls index.")
 
         
